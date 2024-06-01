@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const ContactStyle = styled.div`
   margin-top: 19px;
 
-  div {
+  a {
     display: flex;
     align-items: center;
   }
@@ -15,27 +15,27 @@ const ContactStyle = styled.div`
     color: ${({ theme }) => theme.colors.secondaryTextColor};
     margin-left: 23px;
   }
-  a {
-    font-size: 20px;
-    color: ${({ theme }) => theme.colors.secondaryTextColor};
+  // a {
+  //   font-size: 20px;
+  //   color: ${({ theme }) => theme.colors.secondaryTextColor};
 
-  }
+  // }
 `
 
 function Contact() {
   return (
     <>
       <ContactStyle>
-        <div>
+        <a a href='mailto:info@thesispen.com' target='blank'>
           <Mail />
-          <span><a href='mailto:info@thesispen.com' target='blank'>info@thesispen.com</a></span>
-        </div>
+          <span><>info@thesispen.com</></span>
+        </a>
       </ContactStyle>
       <ContactStyle>
-        <div>
+        <a href='https://www.instagram.com/thesispen_ai/' target='_blank'>
           <Insta />
-         <span> <a href='https://www.instagram.com/thesispen_ai/' target='_blank'>Thesispen AI</a></span>
-        </div>
+         <span><>Thesispen AI</></span>
+        </a>
       </ContactStyle>
     </>
   )

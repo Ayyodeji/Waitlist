@@ -19,12 +19,18 @@ const CollapseNavbarStyle = styled.div`
 `
 
 const LogoWrapper = styled.div`
+display: flex;
+align-items: center;
+width: fit-content;
+svg {
   width: 50px;
-  svg {
-    width: 100%;
-    height: 100%;
-    fill: ${({ theme }) => theme.colors.primaryTextColor};
-  }
+  height: 50px;
+}
+span {
+  font-size: 24px; 
+  margin-left: 10px;
+  color: ${({ theme }) => theme.colors.primaryTextColor};
+}
 `
 const MenuIconWrapper = styled.div`
   svg {
@@ -63,7 +69,8 @@ const CollapseNavbar = () => {
     <MenuWrapper>
       <CollapseNavbarStyle>
         <LogoWrapper>
-          <Logo />
+        <Logo />
+          <span>Thesispen AI</span>
         </LogoWrapper>
         {/* <MenuIconWrapper>
           <MenuIcon onClick={handleMenuShow} />
