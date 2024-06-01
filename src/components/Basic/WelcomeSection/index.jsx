@@ -32,21 +32,23 @@ const WelcomeMessage = styled.h1`
     font-size: 60px;
   }
   @media ${device.sm} {
-    margin-top: 60px;
     margin-top: 40px;
     text-align: center;
   }
 `
 
 const LogoWrapper = styled.div`
-  width: 50px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
   svg {
-    width: 100%;
-    height: 100%;
-    // fill: ${({ theme }) => theme.colors.primaryTextColor};
-    // path {
-    //   fill: ${({ theme }) => theme.colors.tertiary};
-    // }
+    width: 50px;
+    height: 50px;
+  }
+  span {
+    font-size: 24px; 
+    margin-left: 10px;
+    color: ${({ theme }) => theme.colors.primaryTextColor};
   }
   ${SmallDevicesHidden}
 `
@@ -57,6 +59,7 @@ function WelcomeSection({ message }) {
       <ContentWrapper>
         <LogoWrapper>
           <Logo />
+          <span>Thesispen AI</span>
         </LogoWrapper>
         <WelcomeMessage>{message}</WelcomeMessage>
         <Box mt={50}>

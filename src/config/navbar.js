@@ -1,18 +1,7 @@
 export const navbar = [
   {
-    title: 'Home',
+    title: 'THESISPEN AI',
     link: '/',
   },
-  {
-    title: 'Work',
-    link: '/',
-  },
-  {
-    title: 'Testimonials',
-    link: '/',
-  },
-  {
-    title: 'About',
-    link: '/',
-  },
+
 ]
