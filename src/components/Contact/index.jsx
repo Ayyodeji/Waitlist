@@ -15,6 +15,11 @@ const ContactStyle = styled.div`
     color: ${({ theme }) => theme.colors.secondaryTextColor};
     margin-left: 23px;
   }
+  a {
+    font-size: 20px;
+    color: ${({ theme }) => theme.colors.secondaryTextColor};
+
+  }
 `
 
 function Contact() {
@@ -23,13 +28,13 @@ function Contact() {
       <ContactStyle>
         <div>
           <Mail />
-          <span>info@thesispen.com</span>
+          <span><a href='mailto:info@thesispen.com' target='blank'>info@thesispen.com</a></span>
         </div>
       </ContactStyle>
       <ContactStyle>
         <div>
           <Insta />
-          <span>Thesispen AI</span>
+         <span> <a href='https://www.instagram.com/thesispen_ai/' target='_blank'>Thesispen AI</a></span>
         </div>
       </ContactStyle>
     </>
