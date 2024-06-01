@@ -26,13 +26,13 @@ function Contact() {
   return (
     <>
       <ContactStyle>
-        <a a href='mailto:info@thesispen.com' target='blank'>
+        <a a href='mailto:info@thesispen.com' target='_blank' rel="noreferrer">
           <Mail />
           <span><>info@thesispen.com</></span>
         </a>
       </ContactStyle>
       <ContactStyle>
-        <a href='https://www.instagram.com/thesispen_ai/' target='_blank'>
+        <a href='https://www.instagram.com/thesispen_ai/' target='_blank' rel="noreferrer">
           <Insta />
          <span><>Thesispen AI</></span>
         </a>
